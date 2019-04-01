@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+    <link rel="stylesheet" href="style.css">
+  </head>
+  <body>
+    <form action='/' method='post'>
+      <h1>Wu-Tang Name Quiz</h1>
+      <section>
+        <p>Out of the colors provided, which is the ugliest?</p>
+        <div>
+          <input type="radio" name="color" value="1" class="color">
+          <label for="red">Red</label>
+        </div>
+        <div>
+          <input type="radio" name="color" value="2" class="color">
+          <label for="blue">Blue</label>
+        </div>
+      </section>
+      <section>
+        <p>What's your favorite mode of transportation?</p>
+        <div>
+          <input type="radio" name="transport" value="1" class="transport">
+          <label for="car">Car</label>
+        </div>
+        <div>
+          <input type="radio" name="transport" value="2" class="transport">
+          <label for="train">Train</label>
+        </div>
+      </section>
+      <section>
+        <p>What is more valuable to you?</p>
+        <div>
+          <input type="radio" name="valuables" value="1" class="valuables">
+          <label for="family">Family</label>
+        </div>
+        <div>
+          <input type="radio" name="valuables" value="2" class="valuables">
+          <label for="money">Money</label>
+        </div>
+      </section>
+      <section>
+        <p>Are you a leader or a follower?</p>
+        <div>
+          <input type="radio" name="role" value="1" class="role">
+          <label for="follower">Follower</label>
+        </div>
+        <div>
+          <input type="radio" name="role" value="2" class="role">
+          <label for="leader">Leader</label>
+        </div>
+      </section>
+      <section>
+        <p>Do you consider yourself...</p>
+        <div>
+          <input type="radio" name="trait" value="1" class="trait">
+          <label for="intelligent">intelligent</label>
+        </div>
+        <div>
+          <input type="radio" name="trait" value="2" class="trait">
+          <label for="athletic">Athletic</label>
+        </div>
+      </section>
+      <button type="submit">Submit Answers</button>
+    </form>
+      <h2>
+        <%= locals.name %>
+      </h2>
+  </body>
+</html>
